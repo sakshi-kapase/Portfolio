@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: darkslategrey;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px -10px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: aqua;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    color: aqua;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+section {
+    padding: 100px 20px 80px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid aqua;
+    transition: transform 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    max-width: 600px;
+    font-size: 18px; 
+    text-align: center; 
+}
+
+.linkedin, .github {
+    width: 35px; 
+    height: 35px; 
+    margin: 20px 10px;
+    border-radius: 50%;
+}
+
+.button1, .button2 {
+    padding: 10px 20px; 
+    font-size: 14px; 
+    background-color: aqua;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button1:hover, .button2:hover {
+    background-color: #00dddd;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.skills li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.skills li:hover {
+    background-color: aqua;
+    color: black;
+}
+
+/* Education Section */
+.education {
+    background-color: darkslategrey ;
+}
+
+.education h2 {
+    color: aqua;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    border-left: 2px solid aqua;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.item {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: aqua;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+    top: 4px;
+}
+
+p {
+    padding-left: 10px;
+}
+
+.Ed-img {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+.projects {
+    background-color: darkslategrey;
+    color:whitesmoke;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    color: black;
+  }
+  
+  .project-card {
+    background: #fdfdfd;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-thumb {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+.contact {
+    max-width: 500px;
+    margin: auto;
+    background-color: ;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.contact input:hover,
+.contact textarea:hover {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.contact button {
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background-color: #00dddd;
+}
+
+
+body::after {
+    content: "";
+    display: block;
+    height: 100px;
+}
+
+footer {
+    color:white;
+    text-align: center;
+}
